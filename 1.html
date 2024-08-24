@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Picker</title>
+
+    <link rel="stylesheet" href="1.css">
+    <link rel="icon" type="image/png" href="color-picker.png">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="color-picker.png">
+
+        <a href="">
+            <h1>Color Picker</h1>
+        </a>
+    </header>
+
+    <main>
+        <input type="file" id="imageInput" accept="image/*">
+        <br><br>
+
+        <div id="imageContainer">
+            <img id="uploadedImage" alt="Uploaded Image">
+        </div>
+        <br>
+
+        <div id="colorDisplayHex" title="Click to copy"></div>
+
+        <div id="colorDisplayRgb" title="Click to copy"></div>
+        <br><br><br><br>
+    </main>
+
+    <footer>
+        <p id="footerText">Developed by aNjo</p>
+    </footer>
+
+    <div id="customAlert" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="alertMessage">Hex color copied to clipboard!</p>
+        </div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+
+</html>
